@@ -1,14 +1,10 @@
-from flask import Flask
-from flask_restful import Api
+from fastapi import FastAPI
+import FuncionarioDAO
+import ClienteDAO
+import ProdutoDAO
 
-#Import das classes
-from FuncionarioDAO import Funcionario
+app = FastAPI()
 
-app = Flask(__name__)
-api = Api(app)
-
-# mapeamento dos endpoints
-api.add_resource(Funcionario, "/funcionario/<int:id>", endpoint = 'funcionario')
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=True)
+app.include_router(FuncionarioDAO.router)
+app.include_router(ClienteDAO.router)
+app.include_router(ProdutoDAO.router)
