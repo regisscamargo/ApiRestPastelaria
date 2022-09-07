@@ -7,10 +7,11 @@ content-type: application/json
 
 {
     "nome" : "Abc da Silva",
-    "descricao" : "abcbolinhas@",
-    "foto" : "...",
-    "valor_unitario" : "1.50",
-
+    "cpf" : "01923874656",
+    "telefone" : "49988234567",
+    "senha" : "bolinhas",
+    "matricula" : "12345",
+    "grupo" : 1
 }
 
 ### Verbo PUT – atualiza
@@ -18,10 +19,12 @@ PUT http://127.0.0.1:8000/funcionario/2 HTTP/1.1
 content-type: application/json
 
 {
-    "nome" : "goiabada",
-    "descricao" : "goiabada de maraguja",
-    "foto" : "...",
-    "valor_unitario" : "1.50",
+    "nome" : "Bolinhas dos Testes",
+    "cpf" : "12345678909",
+    "telefone" : "49898989",
+    "senha" : "abc",
+    "matricula" : "54321",
+    "grupo" : 2
 }
 
 ### Verbo DELETE - excluir

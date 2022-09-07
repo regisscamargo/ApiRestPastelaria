@@ -1,7 +1,7 @@
-from fastapi import FastAPI
 import FuncionarioDAO
 import ClienteDAO
 import ProdutoDAO
+from fastapi import FastAPI
 
 app = FastAPI()
 
