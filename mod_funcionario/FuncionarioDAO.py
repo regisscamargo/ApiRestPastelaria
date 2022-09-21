@@ -2,7 +2,8 @@ from fastapi import APIRouter
 from pydantic import BaseModel
 import db
 from mod_funcionario.FuncionarioModel import FuncionarioDB
-
+import security
+from fastapi import Depends
 router = APIRouter()
 class Funcionario(BaseModel):
     codigo: int = None
@@ -14,7 +15,8 @@ class Funcionario(BaseModel):
     senha: str = None
 
 # Criar os endpoints de Funcionario: GET, POST, PUT, DELETE
-@router.get("/funcionario/", tags=["funcionario"])
+@router.get("/funcionario/", tags=["funcionario"],
+dependencies=[Depends(security.verify_token), Depends(security.verify_key)])
 def get_funcionario():
     try:
         session = db.Session()

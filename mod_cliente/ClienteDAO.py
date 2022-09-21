@@ -1,5 +1,7 @@
 import db
 from mod_cliente.ClienteModel import ClienteDB
+import security
+from fastapi import Depends
 
 from fastapi import APIRouter
 from pydantic import BaseModel
@@ -17,7 +19,8 @@ class Cliente(BaseModel):
 
 # Criar os endpoints de cliente: GET, POST, PUT, DELETE
 
-@router.get("/cliente/", tags=["cliente"])
+@router.get("/cliente/", tags=["cliente"],
+dependencies=[Depends(security.verify_token), Depends(security.verify_key)])
 def get_cliente():
     try:
         session = db.Session()

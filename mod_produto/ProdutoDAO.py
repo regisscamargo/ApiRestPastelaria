@@ -1,5 +1,7 @@
 import db
 from mod_produto.ProdutoModel import ProdutoDB
+import security
+from fastapi import Depends
 
 from fastapi import APIRouter
 from pydantic import BaseModel
@@ -17,7 +19,8 @@ class Produto(BaseModel):
 # Criar os endpoints de produto: GET, POST, PUT, DELETE
 
 
-@router.get("/produto/", tags=["produto"])
+@router.get("/produto/", tags=["produto"],
+dependencies=[Depends(security.verify_token), Depends(security.verify_key)])
 def get_produto():
     try:
         session = db.Session()

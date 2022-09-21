@@ -1,6 +1,8 @@
 ### Verbo GET – listar
 GET http://localhost:8000/produto/ HTTP/1.1
 content-type: application/json
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
 
 ### Verbo POST – adicionar
 POST http://127.0.0.1:8000/produto/ HTTP/1.1
