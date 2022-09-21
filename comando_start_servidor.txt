@@ -1,0 +1,1 @@
+uvicorn apiPastelaria:app --reload

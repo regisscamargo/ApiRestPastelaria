@@ -1,28 +1,29 @@
 ### Verbo GET – listar
-GET http://localhost:8000/funcionario/0 HTTP/1.1
+GET http://localhost:8000/produto/ HTTP/1.1
+content-type: application/json
 
 ### Verbo POST – adicionar
-POST http://127.0.0.1:8000/funcionario/4 HTTP/1.1
+POST http://127.0.0.1:8000/produto/ HTTP/1.1
 content-type: application/json
 
 {
-    "nome" : "Abc da Silva",
+    "nome" : "goiabada",
     "descricao" : "abcbolinhas@",
-    "foto" : "...",
-    "valor_unitario" : "1.50",
-
+    "foto" : true,
+    "valor_unitario" : 1.50
 }
 
 ### Verbo PUT – atualiza
-PUT http://127.0.0.1:8000/funcionario/2 HTTP/1.1
+PUT http://127.0.0.1:8000/produto/1 HTTP/1.1
 content-type: application/json
 
 {
     "nome" : "goiabada",
     "descricao" : "goiabada de maraguja",
-    "foto" : "...",
-    "valor_unitario" : "1.50",
+    "foto" : 1,
+    "valor_unitario" : 1.50
 }
 
 ### Verbo DELETE - excluir
-DELETE http://127.0.0.1:8000/funcionario/3 HTTP/1.1
+DELETE http://127.0.0.1:8000/produto/1 HTTP/1.1
+content-type: application/json
