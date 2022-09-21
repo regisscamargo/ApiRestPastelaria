@@ -7,11 +7,10 @@ POST http://127.0.0.1:8000/produto/ HTTP/1.1
 content-type: application/json
 
 {
-    "nome" : "Abc da Silva",
+    "nome" : "goiabada",
     "descricao" : "abcbolinhas@",
-    "foto" : "...",
-    "valor_unitario" : "1.50",
-
+    "foto" : true,
+    "valor_unitario" : 1.50
 }
 
 ### Verbo PUT – atualiza
@@ -21,8 +20,8 @@ content-type: application/json
 {
     "nome" : "goiabada",
     "descricao" : "goiabada de maraguja",
-    "foto" : "...",
-    "valor_unitario" : "1.50",
+    "foto" : 1,
+    "valor_unitario" : 1.50
 }
 
 ### Verbo DELETE - excluir

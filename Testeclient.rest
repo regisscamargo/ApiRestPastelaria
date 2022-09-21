@@ -7,12 +7,12 @@ POST http://127.0.0.1:8000/cliente/ HTTP/1.1
 content-type: application/json
 
 {
-    "nome" : "Abc da Silva",
-    "cpf" : "01923874656",
-    "telefone" : "49988234567",
-    "senha" : "bolinhas",
-    "matricula" : "12345",
-    "grupo" : 1
+    "nome" : "Bolinhas dos Testes",
+    "cpf" : "12345678909",
+    "telefone" : "49898989",
+    "compra_fiado" : 1,
+    "dia_fiado": 20,
+    "senha": "123"
 }
 
 ### Verbo PUT – atualiza
@@ -23,9 +23,9 @@ content-type: application/json
     "nome" : "Bolinhas dos Testes",
     "cpf" : "12345678909",
     "telefone" : "49898989",
-    "senha" : "abc",
-    "matricula" : "54321",
-    "grupo" : 2
+    "compra_fiado" : 1,
+    "dia_fiado": 30,
+    "senha": "123"
 }
 
 ### Verbo DELETE - excluir
