@@ -11,7 +11,7 @@ class Produto(BaseModel):
     codigo: int = None
     nome: str
     descricao: str
-    foto: bool = None
+    foto: str
     valor_unitario: float
 
 # Criar os endpoints de produto: GET, POST, PUT, DELETE
