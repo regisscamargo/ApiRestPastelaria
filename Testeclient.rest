@@ -7,9 +7,9 @@ POST http://127.0.0.1:8000/cliente/ HTTP/1.1
 content-type: application/json
 
 {
-    "nome" : "Bolinhas dos Testes",
-    "cpf" : "12345678909",
-    "telefone" : "49898989",
+    "nome" : "Regis Camargo",
+    "cpf" : "12345678945",
+    "telefone" : "498958989",
     "compra_fiado" : 1,
     "dia_fiado": 20,
     "senha": "123"
@@ -20,7 +20,7 @@ PUT http://127.0.0.1:8000/cliente/1 HTTP/1.1
 content-type: application/json
 
 {
-    "nome" : "Bolinhas dos Testes",
+    "nome" : "Regis Santos Camargo",
     "cpf" : "12345678909",
     "telefone" : "49898989",
     "compra_fiado" : 1,
