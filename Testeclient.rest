@@ -8,7 +8,7 @@ content-type: application/json
 
 {
     "nome" : "Regis Camargo",
-    "matricula": 111, 
+    "matricula":  
     "cpf" : "12345678945",
     "telefone" : "498958989",
     "compra_fiado" : 1,
