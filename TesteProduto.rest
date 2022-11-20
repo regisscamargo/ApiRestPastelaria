@@ -1,9 +1,9 @@
 ### Verbo GET – listar
-GET http://localhost:8000/produto/ HTTP/1.1
+GET http://localhost:5000/produto/ HTTP/1.1
 content-type: application/json
 
 ### Verbo POST – adicionar
-POST http://127.0.0.1:8000/produto/ HTTP/1.1
+POST http://127.0.0.1:5000/produto/ HTTP/1.1
 content-type: application/json
 
 {
@@ -15,7 +15,7 @@ content-type: application/json
 }
 
 ### Verbo PUT – atualiza
-PUT http://127.0.0.1:8000/produto/1 HTTP/1.1
+PUT http://127.0.0.1:5000/produto/1 HTTP/1.1
 content-type: application/json
 
 {
@@ -26,5 +26,5 @@ content-type: application/json
 }
 
 ### Verbo DELETE - excluir
-DELETE http://127.0.0.1:8000/produto/1 HTTP/1.1
+DELETE http://127.0.0.1:5000/produto/1 HTTP/1.1
 content-type: application/json

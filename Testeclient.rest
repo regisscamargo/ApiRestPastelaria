@@ -3,11 +3,12 @@ GET http://localhost:8000/cliente/ HTTP/1.1
 content-type: application/json
 
 ### Verbo POST – adicionar
-POST http://127.0.0.1:8000/cliente/ HTTP/1.1
+POST http://127.0.0.1:8000/cliente/1 HTTP/1.1
 content-type: application/json
 
 {
     "nome" : "Regis Camargo",
+    "matricula": 111, 
     "cpf" : "12345678945",
     "telefone" : "498958989",
     "compra_fiado" : 1,
@@ -29,6 +30,6 @@ content-type: application/json
 }
 
 ### Verbo DELETE - excluir
-DELETE http://127.0.0.1:8000/cliente/1 HTTP/1.1
+DELETE http://127.0.0.1:5000/cliente/1 HTTP/1.1
 content-type: application/json
 

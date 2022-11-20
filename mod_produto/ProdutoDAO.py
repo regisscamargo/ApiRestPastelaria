@@ -1,17 +1,18 @@
 import db
 from mod_produto.ProdutoModel import ProdutoDB
+from fastapi import Depends
+import security
 
 from fastapi import APIRouter
 from pydantic import BaseModel
 
-router = APIRouter()
-
+router = APIRouter( dependencies=[Depends(security.verify_token), Depends(security.verify_key)] )
 
 class Produto(BaseModel):
     codigo: int = None
     nome: str
     descricao: str
-    foto: str
+    foto: bool = None
     valor_unitario: float
 
 # Criar os endpoints de produto: GET, POST, PUT, DELETE

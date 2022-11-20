@@ -1,0 +1,41 @@
+### Verbo GET – listar
+GET http://localhost:8000/produto HTTP/1.1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+
+### Verbo GET – listar todos
+curl -X 'GET' \
+    'http://localhost:8000/produto/' \
+    -H 'accept: application/json' \
+    -H 'x-token: abcBolinhasToken' \
+    -H 'x-key: abcBolinhasKey'
+
+### Verbo POST - adicionar
+POST http://localhost:8000/produto HTTP/1.1
+content-type : application/json
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+
+{
+    "nome" : "Thiago",
+    "descricao" : "asdasdasd",
+    "valor_unitario" : 15.5
+}
+
+### Verbo PUT - atualiza
+PUT http://127.0.0.1:8000/produto/1 HTTP/1.1
+content-type : application/json
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+
+{
+    "nome" : "Sartorel",
+    "descricao" : "a",
+    "valor_unitario" : 17.5
+}
+
+### Verbo DELETE - atualiza
+DELETE  http://127.0.0.1:8000/produto/1 HTTP/1.1
+content-type : application/json
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey

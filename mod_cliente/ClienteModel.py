@@ -13,11 +13,11 @@ class ClienteDB(db.Base):
     dia_fiado = Column(CHAR(11), nullable=False)
     senha = Column(VARCHAR(200), nullable=False)
 
-    def _init_(self, id_cliente, nome, cpf, telefone, compra_fiado, dia_fiado, senha):
-        self.id_cliente = id_cliente
-        self.nome = nome
-        self.cpf = cpf
-        self.telefone = telefone
-        self.compra_fiado = compra_fiado
-        self.dia_fiado = dia_fiado
-        self.senha = senha
+def _init_(self, id_cliente, nome, cpf, telefone, compra_fiado, dia_fiado, senha):
+    self.id_cliente = id_cliente
+    self.nome = nome
+    self.cpf = cpf
+    self.telefone = telefone
+    self.compra_fiado = compra_fiado
+    self.dia_fiado = dia_fiado
+    self.senha = senha

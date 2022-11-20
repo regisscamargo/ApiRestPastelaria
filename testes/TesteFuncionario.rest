@@ -1,0 +1,47 @@
+### Verbo GET – listar
+GET http://localhost:8000/funcionario HTTP/1.1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+
+### Verbo GET – listar todos
+curl -X 'GET' \
+    'http://localhost:8000/funcionario/' \
+    -H 'accept: application/json' \
+    -H 'x-token: abcBolinhasToken' \
+    -H 'x-key: abcBolinhasKey'
+
+### Verbo POST - adicionar
+POST http://localhost:8000/funcionario/ HTTP/1.1
+content-type : application/json
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+
+{
+    "nome" : "Carlos",
+    "matricula" : "2222",
+    "cpf" : "33333",
+    "telefone" : "4444",
+    "grupo" : "4",
+    "senha" : "55555"
+}
+
+### Verbo PUT - atualiza
+PUT http://127.0.0.1:8000/funcionario/1 HTTP/1.1
+content-type : application/json
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+
+{
+    "nome" : "Sartorel" ,
+    "matricula" : "2" ,
+    "cpf" : "3" ,
+    "telefone" : "4" ,
+    "grupo" : 5 ,
+    "senha" : "6"
+}
+
+### Verbo DELL - atualiza
+DELETE  http://127.0.0.1:8000/funcionario/1 HTTP/1.1
+content-type : application/json
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
