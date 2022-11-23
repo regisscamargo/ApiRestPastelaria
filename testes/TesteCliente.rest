@@ -17,9 +17,9 @@ x-token: abcBolinhasToken
 x-key: abcBolinhasKey
 
 {
-    "nome" : "Thiago",
-    "cpf" : "3",
-    "telefone" : "3",
+    "nome" : "Lucas",
+    "cpf" : "34132435435",
+    "telefone" : "34234235555",
     "compra_fiado" : 0,
     "dia_fiado" : 2,
     "senha" : "abc"
@@ -32,9 +32,9 @@ x-token: abcBolinhasToken
 x-key: abcBolinhasKey
 
 {
-    "nome" : "Sartorel",
-    "cpf" : "01387897465",
-    "telefone" : "49982345567",
+    "nome" : "Lucas",
+    "cpf" : "231245244",
+    "telefone" : "3121432547",
     "compra_fiado" : 1,
     "dia_fiado" : 20,
     "senha" : "aaa"

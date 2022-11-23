@@ -17,31 +17,31 @@ x-token: abcBolinhasToken
 x-key: abcBolinhasKey
 
 {
-    "nome" : "Carlos",
-    "matricula" : "2222",
-    "cpf" : "33333",
-    "telefone" : "4444",
+    "nome" : "regis",
+    "matricula" : "2231222",
+    "cpf" : "333223333",
+    "telefone" : "44321444",
     "grupo" : "4",
-    "senha" : "55555"
+    "senha" : "555321455"
 }
 
 ### Verbo PUT - atualiza
-PUT http://127.0.0.1:8000/funcionario/1 HTTP/1.1
+PUT http://127.0.0.1:8000/funcionario/2 HTTP/1.1
 content-type : application/json
 x-token: abcBolinhasToken
 x-key: abcBolinhasKey
 
 {
-    "nome" : "Sartorel" ,
-    "matricula" : "2" ,
-    "cpf" : "3" ,
-    "telefone" : "4" ,
+    "nome" : "regis" ,
+    "matricula" : "2213124" ,
+    "cpf" : "32314" ,
+    "telefone" : "441232" ,
     "grupo" : 5 ,
-    "senha" : "6"
+    "senha" : "62314"
 }
 
 ### Verbo DELL - atualiza
-DELETE  http://127.0.0.1:8000/funcionario/1 HTTP/1.1
+DELETE  http://127.0.0.1:8000/funcionario/2 HTTP/1.1
 content-type : application/json
 x-token: abcBolinhasToken
 x-key: abcBolinhasKey
