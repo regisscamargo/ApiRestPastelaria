@@ -1,0 +1,30 @@
+### Verbo GET – listar
+GET http://localhost:5000/produto/ HTTP/1.1
+content-type: application/json
+
+### Verbo POST – adicionar
+POST http://127.0.0.1:5000/produto/ HTTP/1.1
+content-type: application/json
+
+{
+    "nome" : "Regis",
+    "descricao" : "abcbolinhas@",
+    "foto" : "kllkfdlkfjlsd",
+    "valor_unitario" : "1.50"
+
+}
+
+### Verbo PUT – atualiza
+PUT http://127.0.0.1:5000/produto/1 HTTP/1.1
+content-type: application/json
+
+{
+    "nome" : "Regis goiabada",
+    "descricao" : "goiabada de maraguja",
+    "foto" : "dfasffa",
+    "valor_unitario" : "1.12"
+}
+
+### Verbo DELETE - excluir
+DELETE http://127.0.0.1:5000/produto/1 HTTP/1.1
+content-type: application/json

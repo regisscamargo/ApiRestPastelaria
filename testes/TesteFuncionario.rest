@@ -33,11 +33,11 @@ x-key: abcBolinhasKey
 
 {
     "nome" : "regis" ,
-    "matricula" : "2213124" ,
+    "matricula" : "2" ,
     "cpf" : "32314" ,
-    "telefone" : "441232" ,
+    "telefone" : "4" ,
     "grupo" : 5 ,
-    "senha" : "62314"
+    "senha" : "6"
 }
 
 ### Verbo DELL - atualiza
