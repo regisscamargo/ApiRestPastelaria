@@ -13,7 +13,7 @@ class Produto(BaseModel):
     nome: str
     descricao: str
     foto: bool = None
-    valor_unitario: float
+    valor_unitario: str
 
 # Criar os endpoints de produto: GET, POST, PUT, DELETE
 

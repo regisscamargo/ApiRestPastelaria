@@ -17,7 +17,7 @@ x-token: abcBolinhasToken
 x-key: abcBolinhasKey
 
 {
-    "nome" : "asdretrew",
+    "nome" : "Pastel",
     "descricao" : "asdasdasd",
     "valor_unitario" : 15.5
 }
@@ -29,7 +29,7 @@ x-token: abcBolinhasToken
 x-key: abcBolinhasKey
 
 {
-    "nome" : "dasdser",
+    "nome" : "Carne",
     "descricao" : "a",
     "valor_unitario" : 17.5
 }
